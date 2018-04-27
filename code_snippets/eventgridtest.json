@@ -1,0 +1,23 @@
+[{
+    "topic": "LocalDebug",
+    "subject": "/blobServices/default/containers/plates/blobs/Plate1.jpg",
+    "eventType": "Microsoft.Storage.BlobCreated",
+    "eventTime": "2018-03-04T21:48:40.0725325Z",
+    "id": "d0e1fd93-901e-0046-4902-b466f706e891",
+    "data": {
+      "api": "PutBlob",
+      "clientRequestId": "cc805090-1ff5-11e8-90e2-53151b8a2ea8",
+      "requestId": "d0e1fd93-901e-0046-4902-b466f7000000",
+      "eTag": "0x8D58219B1236C05",
+      "contentType": "image/jpeg",
+      "contentLength": 324501,
+      "blobType": "BlockBlob",
+      "url": "http://127.0.0.1:10000/devstoreaccount1/plates/plate1.jpg",
+      "sequencer": "00000000000000000000000000000D6A00000000000981ca",
+      "storageDiagnostics": {
+        "batchId": "0d8884a0-10fe-495a-a6bf-2238b88be6c9"
+      }
+    },
+    "dataVersion": "",
+    "metadataVersion": "1"
+  }]

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverfarms_WestUS2Plan_name": {
+            "value": null
+        },
+        "sites_function_jehollan_build_ill_name": {
+            "value": null
+        },
+        "storageAccounts_jehollanbuildill_name": {
+            "value": null
+        },
+        "workflows_logicapp_jehollan_build_ill_name": {
+            "value": null
+        },
+        "components_function_jehollan_build_ill_name": {
+            "value": null
+        },
+        "config_web_name": {
+            "value": null
+        },
+        "hostNameBindings_function_jehollan_build_ill.azurewebsites.net_name": {
+            "value": null
+        }
+    }
+}
