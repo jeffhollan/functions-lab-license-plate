@@ -1,9 +1,2 @@
-Fix VS Install error
-Update VSIX
-Add images to storage emulator
-Change default Postman for storage and "Analyze"
 Add computer vision to template.json
-Save a "Final project" project
-Set storage to open right up to plates
-Rename unreadable.JPG to .jpg
-Get an o365 account
+Get an o365 accounts

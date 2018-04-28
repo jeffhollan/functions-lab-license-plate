@@ -16,8 +16,8 @@
         }
     },
     "variables": {
-        "azure_function_name": "[concat(uniquestring(resourceGroup().id), 'buildill')]",
-        "storage_account_name": "[concat(uniquestring(resourceGroup().id), 'buildill')]"
+        "azure_function_name": "[concat(uniquestring(resourceGroup().id), 'func')]",
+        "storage_account_name": "[concat(uniquestring(resourceGroup().id), 'stor')]"
     },
     "resources": [
         {
@@ -43,6 +43,18 @@
             "apiVersion": "2018-01-01",
             "dependsOn": []
         },
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+              "name": "F0"
+            },
+            "kind": "ComputerVision",
+            "name": "computervision",
+            "apiVersion": "2016-02-01-preview",
+            "location": "westus2",
+            "properties": {},
+            "dependsOn": []
+          },
         {
             "type": "Microsoft.Logic/workflows",
             "name": "[parameters('logic_app_name')]",
