@@ -9,15 +9,12 @@
         "logic_app_name": {
             "defaultValue": "logicapp-build-ill",
             "type": "String"
-        },
-        "event_grid_custom_name": {
-            "defaultValue": "event-grid-topic",
-            "type": "String"
         }
     },
     "variables": {
         "azure_function_name": "[concat(uniquestring(resourceGroup().id), 'func')]",
-        "storage_account_name": "[concat(uniquestring(resourceGroup().id), 'stor')]"
+        "storage_account_name": "[concat(uniquestring(resourceGroup().id), 'stor')]",
+        "event_grid_name": "[concat(uniquestring(resourceGroup().id), 'eventgrid')]"
     },
     "resources": [
         {
@@ -37,7 +34,7 @@
             "dependsOn": []
         },
         {
-            "name": "[parameters('event_grid_custom_name')]",
+            "name": "[variables('event_grid_name')]",
             "type": "Microsoft.EventGrid/topics",
             "location": "westcentralus",
             "apiVersion": "2018-01-01",
